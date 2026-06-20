@@ -571,8 +571,8 @@ a:hover {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 2fr 1fr;
-  gap: 4rem;
+  grid-template-columns: 1.2fr 1.5fr 1.5fr 1fr;
+  gap: 3rem;
 }
 
 .footer-heading {

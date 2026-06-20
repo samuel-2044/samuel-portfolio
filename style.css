@@ -124,7 +124,7 @@ a:hover {
 }
 
 .section-heading {
-  color: #ffd700;
+  color: #64ffda;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
@@ -327,7 +327,7 @@ a:hover {
 }
 
 .page-title {
-  color: #ffd700;
+  color: #64ffda;
   font-weight: 800;
 }
 
@@ -466,6 +466,42 @@ a:hover {
 
 .display-5 {
   color: #ffd700;
+}
+
+#scrollTopBtn {
+  background: #051e44;
+  border: 2px solid #64ffda;
+  border-radius: 50%;
+  bottom: 2rem;
+  color: #64ffda;
+  cursor: pointer;
+  display: none;
+  font-size: 1.25rem;
+  height: 3rem;
+  line-height: 1;
+  position: fixed;
+  right: 2rem;
+  width: 3rem;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+#scrollTopBtn:hover {
+  background: #64ffda;
+  color: #051e44;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  #scrollTopBtn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {

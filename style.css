@@ -1,6 +1,4 @@
-/* ============================================
-   BASE / RESET
-   ============================================ */
+/* ---Base Styles--- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,10 +22,7 @@ a:hover {
   color: #ffd700;
 }
 
-/* ============================================
-   NAVBAR
-   Used on: all pages (index, about, services, projects, products, gallery, skills, testimonials, faqs, contact)
-   ============================================ */
+/* ---Navbar Styles--- */
 .nav {
   background: #051e44;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -122,10 +117,7 @@ a:hover {
   width: 20px;
 }
 
-/* ============================================
-   SECTIONS
-   Shared across all pages for consistent spacing
-   ============================================ */
+/* ---Section Styles--- */
 .section-block {
   padding: 4rem 0;
 }
@@ -144,10 +136,7 @@ a:hover {
   color: #a0aec4;
 }
 
-/* ============================================
-   HERO
-   Used on: index.html, contact.html
-   ============================================ */
+/* ---Hero Styles--- */
 .hero-section {
   background: #ffffff;
   border-bottom: 1px solid rgba(255, 215, 0, 0.15);
@@ -210,10 +199,7 @@ a:hover {
   width: 100%;
 }
 
-/* ============================================
-   CARDS & COMPONENTS
-   Used on: projects, products, gallery, skills, services, testimonials, about, contact
-   ============================================ */
+/* ---Cards & Components--- */
 .pill {
   align-items: center;
   background: rgba(255, 215, 0, 0.08);
@@ -286,10 +272,7 @@ a:hover {
   font-weight: 800;
 }
 
-/* ============================================
-   UTILITIES
-   Background and text color helpers
-   ============================================ */
+/* ---Utility Classes--- */
 .bg-blue-soft {
   background: #f7fafc;
   border-bottom: 1px solid rgba(255, 215, 0, 0.08);
@@ -338,10 +321,7 @@ a:hover {
   font-weight: 600;
 }
 
-/* ============================================
-   LISTS
-   Used on: projects, testimonials, about, services
-   ============================================ */
+/* ---Lists--- */
 .list-check {
   list-style: none;
   padding-left: 0;
@@ -369,10 +349,7 @@ a:hover {
   margin-bottom: 0.35rem;
 }
 
-/* ============================================
-   SOCIAL LINKS
-   Used on: index.html, contact.html
-   ============================================ */
+/* ---Social Links--- */
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -401,10 +378,7 @@ a:hover {
   transform: translateY(-2px);
 }
 
-/* ============================================
-   FAQS PAGE
-   Accordion styles for faqs.html
-   ============================================ */
+/* ---FAQs Accordion--- */
 .accordion-button {
   color: #1a202c;
   font-size: 1rem;
@@ -422,10 +396,7 @@ a:hover {
   border-color: #ffd700;
 }
 
-/* ============================================
-   CONTACT PAGE
-   Form styles for contact.html
-   ============================================ */
+/* ---Contact Form--- */
 .form-control,
 .form-select {
   border: 1px solid rgba(255, 215, 0, 0.2);
@@ -446,10 +417,7 @@ a:hover {
   margin-bottom: 0.35rem;
 }
 
-/* ============================================
-   BUTTONS
-   Shared across all pages
-   ============================================ */
+/* ---Buttons--- */
 .btn-primary {
   background: #ffd700;
   border: none;
@@ -494,10 +462,7 @@ a:hover {
   color: #ffffff;
 }
 
-/* ============================================
-   SCROLL TO TOP
-   Used on: all pages
-   ============================================ */
+/* ---Scroll To Top--- */
 #scrollTopBtn {
   background: #051e44;
   border: 2px solid #64ffda;
@@ -524,10 +489,7 @@ a:hover {
   transform: translateY(-2px);
 }
 
-/* ============================================
-   FOOTER
-   Used on: index.html
-   ============================================ */
+/* ---Footer--- */
 .site-footer {
   background: #051e44;
   border-top: 1px solid rgba(100, 255, 218, 0.1);
@@ -590,10 +552,7 @@ a:hover {
   margin: 0;
 }
 
-/* ============================================
-   RESPONSIVE
-   Mobile adjustments for all pages
-   ============================================ */
+/* ---Responsive--- */
 @media (max-width: 768px) {
   #scrollTopBtn {
     bottom: 1.25rem;

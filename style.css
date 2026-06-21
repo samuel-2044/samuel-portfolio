@@ -1,3 +1,6 @@
+/* ============================================
+   BASE / RESET
+   ============================================ */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,6 +24,10 @@ a:hover {
   color: #ffd700;
 }
 
+/* ============================================
+   NAVBAR
+   Used on: all pages (index, about, services, projects, products, gallery, skills, testimonials, faqs, contact)
+   ============================================ */
 .nav {
   background: #051e44;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -115,6 +122,10 @@ a:hover {
   width: 20px;
 }
 
+/* ============================================
+   SECTIONS
+   Shared across all pages for consistent spacing
+   ============================================ */
 .section-block {
   padding: 4rem 0;
 }
@@ -133,6 +144,10 @@ a:hover {
   color: #a0aec4;
 }
 
+/* ============================================
+   HERO
+   Used on: index.html, contact.html
+   ============================================ */
 .hero-section {
   background: #ffffff;
   border-bottom: 1px solid rgba(255, 215, 0, 0.15);
@@ -195,6 +210,10 @@ a:hover {
   width: 100%;
 }
 
+/* ============================================
+   CARDS & COMPONENTS
+   Used on: projects, products, gallery, skills, services, testimonials, about, contact
+   ============================================ */
 .pill {
   align-items: center;
   background: rgba(255, 215, 0, 0.08);
@@ -207,21 +226,6 @@ a:hover {
   gap: 0.4rem;
   margin-bottom: 1rem;
   padding: 0.45rem 0.85rem;
-}
-
-.bg-blue-soft {
-  background: #f7fafc;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.08);
-  border-top: 1px solid rgba(255, 215, 0, 0.08);
-}
-
-.bg-white {
-  background: #ffffff;
-}
-
-.bg-blue-dark {
-  background: #051e44;
-  color: #a0aec4;
 }
 
 .service-card,
@@ -277,6 +281,98 @@ a:hover {
   height: 100%;
 }
 
+.page-title {
+  color: #64ffda;
+  font-weight: 800;
+}
+
+/* ============================================
+   UTILITIES
+   Background and text color helpers
+   ============================================ */
+.bg-blue-soft {
+  background: #f7fafc;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.08);
+  border-top: 1px solid rgba(255, 215, 0, 0.08);
+}
+
+.bg-white {
+  background: #ffffff;
+}
+
+.bg-blue-dark {
+  background: #051e44;
+  color: #a0aec4;
+}
+
+.text-primary {
+  color: #ffd700 !important;
+}
+
+.text-dark {
+  color: #1a202c !important;
+}
+
+.text-secondary {
+  color: #a0aec4 !important;
+}
+
+.text-muted {
+  color: #a0aec4 !important;
+}
+
+.text-blue {
+  color: #64ffda !important;
+}
+
+.lead {
+  color: #1a202c;
+  font-weight: 600;
+}
+
+.display-5 {
+  color: #ffd700;
+}
+
+.badge {
+  font-weight: 600;
+}
+
+/* ============================================
+   LISTS
+   Used on: projects, testimonials, about, services
+   ============================================ */
+.list-check {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-check li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.75rem;
+  position: relative;
+}
+
+.list-check li::before {
+  color: #ffd700;
+  content: "✓";
+  font-weight: 900;
+  left: 0;
+  position: absolute;
+}
+
+.feature-list {
+  padding-left: 1.25rem;
+}
+
+.feature-list li {
+  margin-bottom: 0.35rem;
+}
+
+/* ============================================
+   SOCIAL LINKS
+   Used on: index.html, contact.html
+   ============================================ */
 .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -305,38 +401,10 @@ a:hover {
   transform: translateY(-2px);
 }
 
-.page-title {
-  color: #64ffda;
-  font-weight: 800;
-}
-
-.list-check {
-  list-style: none;
-  padding-left: 0;
-}
-
-.list-check li {
-  margin-bottom: 0.5rem;
-  padding-left: 1.75rem;
-  position: relative;
-}
-
-.list-check li::before {
-  color: #ffd700;
-  content: "✓";
-  font-weight: 900;
-  left: 0;
-  position: absolute;
-}
-
-.feature-list {
-  padding-left: 1.25rem;
-}
-
-.feature-list li {
-  margin-bottom: 0.35rem;
-}
-
+/* ============================================
+   FAQS PAGE
+   Accordion styles for faqs.html
+   ============================================ */
 .accordion-button {
   color: #1a202c;
   font-size: 1rem;
@@ -354,6 +422,10 @@ a:hover {
   border-color: #ffd700;
 }
 
+/* ============================================
+   CONTACT PAGE
+   Form styles for contact.html
+   ============================================ */
 .form-control,
 .form-select {
   border: 1px solid rgba(255, 215, 0, 0.2);
@@ -374,6 +446,10 @@ a:hover {
   margin-bottom: 0.35rem;
 }
 
+/* ============================================
+   BUTTONS
+   Shared across all pages
+   ============================================ */
 .btn-primary {
   background: #ffd700;
   border: none;
@@ -418,35 +494,10 @@ a:hover {
   color: #ffffff;
 }
 
-.text-primary {
-  color: #ffd700 !important;
-}
-
-.badge {
-  font-weight: 600;
-}
-
-.lead {
-  color: #1a202c;
-  font-weight: 600;
-}
-
-.text-dark {
-  color: #1a202c !important;
-}
-
-.text-secondary {
-  color: #a0aec4 !important;
-}
-
-.text-muted {
-  color: #a0aec4 !important;
-}
-
-.display-5 {
-  color: #ffd700;
-}
-
+/* ============================================
+   SCROLL TO TOP
+   Used on: all pages
+   ============================================ */
 #scrollTopBtn {
   background: #051e44;
   border: 2px solid #64ffda;
@@ -473,6 +524,76 @@ a:hover {
   transform: translateY(-2px);
 }
 
+/* ============================================
+   FOOTER
+   Used on: index.html
+   ============================================ */
+.site-footer {
+  background: #051e44;
+  border-top: 1px solid rgba(100, 255, 218, 0.1);
+  padding: 4rem 0 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1.5fr 1fr;
+  gap: 3rem;
+}
+
+.footer-heading {
+  color: #ffd700;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.footer-text {
+  color: #a0aec4;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  max-width: 280px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links li a {
+  color: #a0aec4;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-links li a:hover {
+  color: #64ffda;
+  padding-left: 4px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(100, 255, 218, 0.08);
+  margin-top: 3rem;
+  padding: 1.25rem 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #718096;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE
+   Mobile adjustments for all pages
+   ============================================ */
 @media (max-width: 768px) {
   #scrollTopBtn {
     bottom: 1.25rem;
@@ -481,9 +602,7 @@ a:hover {
     width: 2.5rem;
     font-size: 1rem;
   }
-}
 
-@media (max-width: 768px) {
   .nav-wrap {
     justify-content: space-between;
   }
@@ -551,81 +670,7 @@ a:hover {
   .section-block {
     padding: 3rem 0;
   }
-}
-/* Footer Styles */
-.footer {
-  position: sticky;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 1280px;
-  width: 95%;
-  background: #051e44;
-  border-radius: 6px;
-}
-.site-footer {
-  background: #051e44;
-  border-top: 1px solid rgba(100, 255, 218, 0.1);
-  padding: 4rem 0 0;
-}
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1.5fr 1.5fr 1fr;
-  gap: 3rem;
-}
-
-.footer-heading {
-  color: #ffd700;
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 1.25rem;
-}
-
-.footer-text {
-  color: #a0aec4;
-  font-size: 0.9rem;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  max-width: 280px;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 0.6rem;
-}
-
-.footer-links li a {
-  color: #a0aec4;
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: color 0.2s ease, padding-left 0.2s ease;
-}
-
-.footer-links li a:hover {
-  color: #64ffda;
-  padding-left: 4px;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(100, 255, 218, 0.08);
-  margin-top: 3rem;
-  padding: 1.25rem 0;
-  text-align: center;
-}
-
-.footer-bottom p {
-  color: #718096;
-  font-size: 0.85rem;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
   .site-footer {
     padding: 3rem 0 0;
   }

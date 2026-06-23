@@ -236,6 +236,11 @@ a:hover {
   padding: 1rem;
 }
 
+.project-card img {
+  max-height: 180px;
+  object-fit: cover;
+}
+
 .skill-group {
   background: #ffffff;
   border: 1px solid rgba(255, 215, 0, 0.2);

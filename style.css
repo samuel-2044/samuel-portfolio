@@ -232,6 +232,10 @@ a:hover {
   transform: translateY(-3px);
 }
 
+.bg-blue-soft img {
+  max-height: 240px;
+}
+
 .project-card {
   padding: 1rem;
 }

@@ -232,6 +232,10 @@ a:hover {
   transform: translateY(-3px);
 }
 
+.project-card {
+  padding: 1rem;
+}
+
 .skill-group {
   background: #ffffff;
   border: 1px solid rgba(255, 215, 0, 0.2);

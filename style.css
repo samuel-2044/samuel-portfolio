@@ -661,10 +661,6 @@ a:hover {
     text-align: center;
   }
 
-  .theme-toggle {
-    order: 10;
-  }
-
   .nav-list {
     flex-direction: column;
     align-items: stretch;

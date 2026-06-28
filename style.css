@@ -197,9 +197,16 @@ a:hover {
 .skill-card,
 .contact-card {
   background: #ffffff;
-  border: 1px solid rgba(255, 215, 0, 0.2);
   border-radius: 1.25rem;
   box-shadow: 0 4px 24px rgba(5, 30, 68, 0.06);
+}
+
+.hero-left-card {
+  border: 1px solid rgba(43, 108, 176, 0.55);
+}
+
+.hero-right-card {
+  border: 1px solid rgba(43, 108, 176, 0.35);
 }
 
 .hero-left-card {
@@ -749,8 +756,6 @@ body.dark-mode .nav {
 }
 
 body.dark-mode .hero-section,
-body.dark-mode .hero-left-card,
-body.dark-mode .hero-right-card,
 body.dark-mode .soft-card,
 body.dark-mode .project-card,
 body.dark-mode .skill-card,
@@ -760,6 +765,14 @@ body.dark-mode .feature-card,
 body.dark-mode .skill-group {
   background: #1a202c;
   border-color: rgba(255, 215, 0, 0.3);
+}
+
+body.dark-mode .hero-left-card {
+  border-color: rgba(100, 255, 218, 0.5);
+}
+
+body.dark-mode .hero-right-card {
+  border-color: rgba(100, 255, 218, 0.35);
 }
 
 body.dark-mode .section-heading,

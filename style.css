@@ -6,49 +6,9 @@
   --gold: #ffd700;
   --navy: #051e44;
   --muted: #a0aec4;
-  --dark: #1a202c;
-  --teal: #64ffda;
   --bg-dark: #0a1128;
-  --text-light: #e2e8f0;
-  --gray-300: #cbd5e0;
-  --gray-muted: #718096;
-  --green: #17725d;
-  --gold-hover: #e6c200;
-  --bg-soft: #f7fafc;
-  --border-gray: #dee2e8;
-  --navy-light: #0a2f66;
-  --gray-700: #2d3748;
   --teal-dark: #4fd9c4;
-  --section-subtitle: #202835;
-  --gold-alpha-06: rgba(255, 215, 0, 0.06);
-  --gold-alpha-08: rgba(255, 215, 0, 0.08);
-  --gold-alpha-10: rgba(255, 215, 0, 0.1);
-  --gold-alpha-12: rgba(255, 215, 0, 0.12);
-  --gold-alpha-15: rgba(255, 215, 0, 0.15);
-  --gold-alpha-20: rgba(255, 215, 0, 0.2);
-  --gold-alpha-25: rgba(255, 215, 0, 0.25);
-  --gold-alpha-30: rgba(255, 215, 0, 0.3);
-  --gold-alpha-35: rgba(255, 215, 0, 0.35);
-  --gold-alpha-55: rgba(255, 215, 0, 0.55);
-  --white-alpha-08: rgba(255, 255, 255, 0.08);
-  --white-alpha-20: rgba(255, 255, 255, 0.2);
-  --navy-alpha-06: rgba(5, 30, 68, 0.06);
-  --navy-alpha-08: rgba(5, 30, 68, 0.08);
-  --navy-alpha-55: rgba(5, 30, 68, 0.55);
-  --navy-alpha-35: rgba(5, 30, 68, 0.35);
-  --teal-alpha-08: rgba(100, 255, 218, 0.08);
-  --teal-alpha-10: rgba(100, 255, 218, 0.1);
-  --teal-alpha-20: rgba(100, 255, 218, 0.2);
-  --teal-alpha-30: rgba(100, 255, 218, 0.3);
-  --teal-alpha-50: rgba(100, 255, 218, 0.5);
-  --teal-alpha-35: rgba(100, 255, 218, 0.35);
-  --black-alpha-15: rgba(0, 0, 0, 0.15);
-  --blue-alpha-55: rgba(43, 108, 176, 0.55);
-  --blue-alpha-35: rgba(43, 108, 176, 0.35);
-  --blue-alpha-30: rgba(43, 108, 176, 0.3);
-  --blue-alpha-08: rgba(43, 108, 176, 0.08);
 }
-
 
 /* ---I set up the base styles here--- */
 * {
@@ -77,7 +37,7 @@ a:hover {
 /* ---I added the sticky navbar here--- */
 .nav {
   background: var(--navy);
-  border-bottom: 1px solid var(--white-alpha-08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -109,7 +69,7 @@ a:hover {
 
 .theme-toggle {
   background: transparent;
-  border: 1px solid var(--gold-alpha-20);
+  border: 1px solid rgba(255, 215, 0, 0.2);
   border-radius: 0.375rem;
   color: var(--gold);
   cursor: pointer;
@@ -122,7 +82,7 @@ a:hover {
 }
 
 .theme-toggle:hover {
-  background: var(--gold-alpha-10);
+  background: rgba(255, 215, 0, 0.1);
   color: var(--gold);
 }
 
@@ -148,7 +108,7 @@ a:hover {
 
 .nav-link:hover,
 .nav-link:focus {
-  background: var(--gold-alpha-10);
+  background: rgba(255, 215, 0, 0.1);
   color: var(--gold);
 }
 
@@ -165,7 +125,7 @@ a:hover {
 .nav-toggle {
   align-items: center;
   background: transparent;
-  border: 1px solid var(--white-alpha-20);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0.375rem;
   cursor: pointer;
   display: none;
@@ -177,7 +137,7 @@ a:hover {
 }
 
 .nav-toggle:hover {
-  background: var(--gold-alpha-10);
+  background: rgba(255, 215, 0, 0.1);
 }
 
 .nav-toggle span {
@@ -204,7 +164,7 @@ a:hover {
 }
 
 .section-subtitle {
-  color: var(--section-subtitle);
+  color: var(--text-primary);
   margin-bottom: 1rem;
   margin-inline: auto;
   max-width: 720px;
@@ -213,14 +173,14 @@ a:hover {
 /* ---I styled the hero section here--- */
 .hero-section {
   background: var(--bg-white);
-  border-bottom: 1px solid var(--gold-alpha-15);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.15);
   overflow: hidden;
   position: relative;
 }
 
 .hero-section::before,
 .hero-section::after {
-  background: var(--gold-alpha-06);
+  background: rgba(255, 215, 0, 0.06);
   border-radius: 999px;
   content: "";
   filter: blur(48px);
@@ -250,15 +210,15 @@ a:hover {
 .contact-card {
   background: var(--bg-white);
   border-radius: 1.25rem;
-  box-shadow: 0 4px 24px var(--navy-alpha-06);
+  box-shadow: 0 4px 24px rgba(5, 30, 68, 0.06);
 }
 
 .hero-left-card {
-  border: 1px solid var(--blue-alpha-55);
+  border: 1px solid rgba(43, 108, 176, 0.55);
 }
 
 .hero-right-card {
-  border: 1px solid var(--blue-alpha-35);
+  border: 1px solid rgba(43, 108, 176, 0.35);
 }
 
 .hero-left-card {
@@ -272,7 +232,7 @@ a:hover {
 }
 
 .hero-image {
-  border: 4px solid var(--gold-alpha-55);
+  border: 4px solid rgba(255, 215, 0, 0.55);
   border-radius: 2rem;
   height: 100%;
   max-height: 420px;
@@ -284,8 +244,8 @@ a:hover {
 /* ---I added card hover animations here--- */
 .pill {
   align-items: center;
-  background: var(--gold-alpha-08);
-  border: 1px solid var(--gold-alpha-25);
+  background: rgba(255, 215, 0, 0.08);
+  border: 1px solid rgba(255, 215, 0, 0.25);
   border-radius: 999px;
   color: var(--blue);
   display: inline-flex;
@@ -310,7 +270,7 @@ a:hover {
 .skill-card:hover,
 .contact-card:hover {
   border-color: var(--gold);
-  box-shadow: 0 8px 32px var(--gold-alpha-10);
+  box-shadow: 0 8px 32px rgba(255, 215, 0, 0.1);
   transform: translateY(-3px);
 }
 
@@ -329,7 +289,7 @@ a:hover {
 
 .skill-group {
   background: var(--bg-white);
-  border: 1px solid var(--gold-alpha-20);
+  border: 1px solid rgba(255, 215, 0, 0.2);
   border-radius: 1rem;
   padding: 1.5rem;
 }
@@ -339,7 +299,7 @@ a:hover {
 }
 
 .skill-label {
-  color: var(--dark);
+  color: var(--navy);
   font-size: 0.95rem;
   font-weight: 700;
 }
@@ -350,14 +310,14 @@ a:hover {
 }
 
 .skill-track {
-  background: var(--gold-alpha-12);
+  background: rgba(255, 215, 0, 0.12);
   border-radius: 999px;
   height: 0.65rem;
   overflow: hidden;
 }
 
 .skill-fill {
-  background: linear-gradient(90deg, var(--gold), var(--gold-hover));
+  background: linear-gradient(90deg, var(--gold), var(--gold));
   border-radius: 999px;
   height: 100%;
 }
@@ -365,14 +325,14 @@ a:hover {
 
 /* ---I created unified pill styles here--- */
 .pill-teal {
-  background: var(--blue-alpha-08);
-  border-color: var(--blue-alpha-30);
+  background: rgba(43, 108, 176, 0.08);
+  border-color: rgba(43, 108, 176, 0.3);
   color: var(--blue);
 }
 
 .badge-gold {
-  background: var(--gold-alpha-08);
-  border-color: var(--gold-alpha-30);
+  background: rgba(255, 215, 0, 0.08);
+  border-color: rgba(255, 215, 0, 0.3);
   color: var(--gold);
 }
 
@@ -385,9 +345,9 @@ a:hover {
 
 /* ---I added background and text utilities here--- */
 .bg-blue-soft {
-  background: var(--bg-soft);
-  border-bottom: 1px solid var(--gold-alpha-08);
-  border-top: 1px solid var(--gold-alpha-08);
+  background: var(--bg-white);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.08);
+  border-top: 1px solid rgba(255, 215, 0, 0.08);
 }
 
 .bg-white {
@@ -404,7 +364,7 @@ a:hover {
 }
 
 .text-dark {
-  color: var(--dark) !important;
+  color: var(--navy) !important;
 }
 
 .text-secondary {
@@ -416,11 +376,11 @@ a:hover {
 }
 
 .text-blue {
-  color: var(--green) !important;
+  color: var(--blue) !important;
 }
 
 .lead {
-  color: var(--dark);
+  color: var(--navy);
   font-weight: 600;
 }
 
@@ -470,9 +430,9 @@ a:hover {
 .social-link {
   align-items: center;
   background: var(--navy);
-  border: 1px solid var(--teal-alpha-30);
+  border: 1px solid rgba(79, 217, 196, 0.3);
   border-radius: 999px;
-  color: var(--teal);
+  color: var(--teal-dark);
   display: inline-flex;
   font-size: 1.2rem;
   font-weight: 800;
@@ -484,32 +444,32 @@ a:hover {
 }
 
 .social-link:hover {
-  background: var(--teal);
+  background: var(--teal-dark);
   color: var(--navy);
-  border-color: var(--teal);
+  border-color: var(--teal-dark);
   transform: translateY(-2px);
 }
 
 /* ---I styled the accordion here--- */
 .accordion-button {
-  color: var(--dark);
+  color: var(--navy);
   font-size: 1rem;
   font-weight: 600;
 }
 
 .accordion-button:not(.collapsed) {
-  background: var(--gold-alpha-08);
+  background: rgba(255, 215, 0, 0.08);
   color: var(--navy);
-  box-shadow: inset 0 -1px 0 var(--navy-alpha-08);
+  box-shadow: inset 0 -1px 0 rgba(5, 30, 68, 0.08);
 }
 
 .accordion-button:focus {
-  box-shadow: 0 0 0 0.25rem var(--gold-alpha-20);
+  box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.2);
   border-color: var(--gold);
 }
 
 .faq-item {
-  border: 1px solid var(--gold-alpha-20);
+  border: 1px solid rgba(255, 215, 0, 0.2);
   margin-bottom: 0.75rem;
   border-radius: 0.75rem;
   overflow: hidden;
@@ -524,7 +484,7 @@ a:hover {
 /* ---I styled the contact form here--- */
 .form-control,
 .form-select {
-  border: 1px solid var(--gold-alpha-20);
+  border: 1px solid rgba(255, 215, 0, 0.2);
   border-radius: 0.5rem;
   padding: 0.65rem 1rem;
 }
@@ -532,11 +492,11 @@ a:hover {
 .form-control:focus,
 .form-select:focus {
   border-color: var(--gold);
-  box-shadow: 0 0 0 0.25rem var(--gold-alpha-10);
+  box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.1);
 }
 
 .form-label {
-  color: var(--dark);
+  color: var(--navy);
   font-size: 0.9rem;
   font-weight: 700;
   margin-bottom: 0.35rem;
@@ -551,8 +511,8 @@ a:hover {
 }
 
 .btn-primary:hover {
-  background: var(--gold-hover);
-  color: var(--navy);
+  background: var(--navy);
+  color: var(--gold);
 }
 
 .btn-outline-primary {
@@ -561,8 +521,8 @@ a:hover {
 }
 
 .btn-outline-primary:hover {
-  background: var(--gold);
-  color: var(--navy);
+  background: var(--navy);
+  color: var(--gold);
 }
 
 .btn-success {
@@ -573,27 +533,39 @@ a:hover {
 }
 
 .btn-success:hover {
-  background: var(--navy-light);
-  color: var(--gold);
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.btn-secondary {
+  background: var(--teal-dark);
+  border: none;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.btn-secondary:hover {
+  background: var(--navy);
+  color: var(--teal-dark);
 }
 
 .btn-outline-dark {
   border-color: var(--muted);
-  color: var(--dark);
+  color: var(--navy);
 }
 
 .btn-outline-dark:hover {
-  background: var(--dark);
+  background: var(--navy);
   color: var(--bg-white);
 }
 
 /* ---I added the scroll-to-top button here--- */
 #scrollTopBtn {
   background: var(--navy);
-  border: 2px solid var(--teal);
+  border: 2px solid var(--teal-dark);
   border-radius: 50%;
   bottom: 2rem;
-  color: var(--teal);
+  color: var(--teal-dark);
   cursor: pointer;
   display: none;
   font-size: 1.25rem;
@@ -609,7 +581,7 @@ a:hover {
 }
 
 #scrollTopBtn:hover {
-  background: var(--teal);
+  background: var(--teal-dark);
   color: var(--navy);
   transform: translateY(-2px);
 }
@@ -617,7 +589,7 @@ a:hover {
 /* ---I styled the footer here--- */
 .site-footer {
   background: var(--navy);
-  border-top: 1px solid var(--teal-alpha-10);
+  border-top: 1px solid rgba(79, 217, 196, 0.1);
   padding: 4rem 0 0;
 }
 
@@ -660,7 +632,7 @@ a:hover {
 }
 
 .footer-links li a:hover {
-  color: var(--teal);
+  color: var(--teal-dark);
   padding-left: 4px;
 }
 
@@ -671,14 +643,14 @@ a:hover {
 }
 
 .footer-bottom {
-  border-top: 1px solid var(--teal-alpha-08);
+  border-top: 1px solid rgba(79, 217, 196, 0.1);
   margin-top: 3rem;
   padding: 1.25rem 0;
   text-align: center;
 }
 
 .footer-bottom p {
-  color: var(--gray-muted);
+  color: var(--muted);
   font-size: 0.85rem;
   margin: 0;
 }
@@ -721,9 +693,9 @@ a:hover {
     align-items: stretch;
     width: min(18rem, calc(100vw - 2rem));
     background: var(--navy);
-    border: 1px solid var(--gold-alpha-15);
+    border: 1px solid rgba(255, 215, 0, 0.15);
     border-radius: 0 0 0.75rem 0.75rem;
-    box-shadow: 0 10px 24px var(--black-alpha-15);
+    box-shadow: 0 10px 24px rgba(5, 30, 68, 0.15);
     overflow: hidden;
     max-height: 0;
     opacity: 0;
@@ -761,7 +733,7 @@ a:hover {
 
   .nav-link:hover,
   .nav-link:focus {
-    background: var(--gold-alpha-10);
+    background: rgba(255, 215, 0, 0.1);
     color: var(--gold);
     transform: translateX(2px);
   }
@@ -800,7 +772,7 @@ a:hover {
 /* ---I added dark mode toggle styles here--- */
 body.dark-mode {
   background: var(--bg-dark);
-  color: var(--text-light);
+  color: var(--muted);
 }
 
 body.dark-mode .nav {
@@ -815,30 +787,30 @@ body.dark-mode .contact-card,
 body.dark-mode .service-card,
 body.dark-mode .feature-card,
 body.dark-mode .skill-group {
-  background: var(--dark);
-  border-color: var(--gold-alpha-30);
+  background: var(--navy);
+  border-color: rgba(255, 215, 0, 0.3);
 }
 
 body.dark-mode .hero-left-card {
-  border-color: var(--teal-alpha-50);
+  border-color: rgba(79, 217, 196, 0.5);
 }
 
 body.dark-mode .hero-right-card {
-  border-color: var(--teal-alpha-35);
+  border-color: rgba(79, 217, 196, 0.35);
 }
 
 body.dark-mode .section-heading,
 body.dark-mode .display-5 {
-  color: var(--teal);
+  color: var(--teal-dark);
 }
 
 body.dark-mode .lead,
 body.dark-mode .text-dark {
-  color: var(--text-light) !important;
+  color: var(--muted) !important;
 }
 
 body.dark-mode .section-subtitle {
-  color: var(--gray-300);
+  color: var(--muted);
 }
 
 body.dark-mode .text-secondary {
@@ -848,74 +820,89 @@ body.dark-mode .text-secondary {
 body.dark-mode .nav-link,
 body.dark-mode .footer-text,
 body.dark-mode .footer-links li a {
-  color: var(--gray-300);
+  color: var(--muted);
 }
 
 body.dark-mode .footer-item {
-  color: var(--text-light);
+  color: var(--muted);
 }
 
 body.dark-mode .nav-link:hover,
 body.dark-mode .nav-link:focus {
-  background: var(--teal-alpha-10);
-  color: var(--teal);
+  background: rgba(79, 217, 196, 0.1);
+  color: var(--teal-dark);
 }
 
 body.dark-mode .social-link {
-  background: var(--dark);
-  border-color: var(--teal-alpha-30);
-  color: var(--teal);
+  background: var(--navy);
+  border-color: rgba(79, 217, 196, 0.3);
+  color: var(--teal-dark);
 }
 
 body.dark-mode .social-link:hover {
-  background: var(--teal);
-  color: var(--bg-dark);
-}
-
-body.dark-mode .bg-blue-soft {
-  background: var(--dark);
-  border-color: var(--teal-alpha-10);
-}
-
-body.dark-mode .badge {
-  background: var(--teal-alpha-10);
-  border-color: var(--teal-alpha-30);
-  color: var(--teal);
-}
-
-body.dark-mode .hero-image {
-  border-color: var(--teal-alpha-20);
-}
-
-body.dark-mode .pill,
-body.dark-mode .pill-teal {
-  background: var(--teal-alpha-08);
-  border-color: var(--teal-alpha-30);
-  color: var(--teal);
-}
-
-body.dark-mode .btn-primary {
-  background: var(--teal);
-  color: var(--bg-dark);
-}
-
-body.dark-mode .btn-primary:hover {
   background: var(--teal-dark);
   color: var(--bg-dark);
 }
 
+body.dark-mode .bg-blue-soft {
+  background: var(--navy);
+  border-color: rgba(79, 217, 196, 0.1);
+}
+
+body.dark-mode .badge {
+  background: rgba(79, 217, 196, 0.1);
+  border-color: rgba(79, 217, 196, 0.3);
+  color: var(--teal-dark);
+}
+
+body.dark-mode .hero-image {
+  border-color: rgba(79, 217, 196, 0.2);
+}
+
+body.dark-mode .pill,
+body.dark-mode .pill-teal {
+  background: rgba(79, 217, 196, 0.1);
+  border-color: rgba(79, 217, 196, 0.3);
+  color: var(--teal-dark);
+}
+
+body.dark-mode .btn-primary {
+  background: var(--teal-dark);
+  color: var(--bg-dark);
+}
+
+body.dark-mode .btn-primary:hover {
+  background: var(--bg-dark);
+  color: var(--teal-dark);
+}
+
 body.dark-mode .btn-success {
-  background: var(--dark);
-  color: var(--teal);
+  background: var(--navy);
+  color: var(--teal-dark);
 }
 
 body.dark-mode .btn-success:hover {
-  background: var(--gray-700);
-  color: var(--teal);
+  background: var(--teal-dark);
+  color: var(--navy);
+}
+
+body.dark-mode .btn-outline-primary:hover {
+  background: var(--navy);
+  color: var(--gold);
+}
+
+body.dark-mode .btn-secondary {
+  background: var(--navy);
+  color: var(--teal-dark);
+}
+
+body.dark-mode .btn-secondary:hover {
+  background: var(--teal-dark);
+  color: var(--navy);
 }
 
 body.dark-mode .nav-check:checked ~ .nav-menu {
-  border-color: var(--gold-alpha-15);
+  border-color: rgba(255, 215, 0, 0.15);
 }
 
 /* ---I adjusted the toggle for mobile here--- */
@@ -967,19 +954,19 @@ body.dark-mode .nav-check:checked ~ .nav-menu {
 .body-lead {
   font-size: 1.25rem;
   font-weight: 600;
-  color: var(--teal);
+  color: var(--teal-dark);
   margin-bottom: 1rem;
 }
 
 .body-lg {
   font-size: 1.25rem;
-  color: var(--dark);
+  color: var(--navy);
   margin-bottom: 1rem;
 }
 
 .body-md {
   font-size: 1rem;
-  color: var(--dark);
+  color: var(--navy);
   margin-bottom: 0.75rem;
 }
 
@@ -1013,7 +1000,7 @@ body.dark-mode .nav-check:checked ~ .nav-menu {
 
 .text-detail {
   font-size: 0.875rem;
-  color: var(--gray-muted);
+  color: var(--muted);
   margin-bottom: 0.5rem;
 }
 
@@ -1048,7 +1035,7 @@ body.dark-mode .nav-check:checked ~ .nav-menu {
 
 .divider {
   border: 0;
-  border-top: 1px solid var(--gold-alpha-20);
+  border-top: 1px solid rgba(255, 215, 0, 0.2);
   margin: 1.5rem 0;
 }
 
@@ -1077,9 +1064,9 @@ body.dark-mode .nav-check:checked ~ .nav-menu {
 
 /* ---Semantic badge utilities--- */
 .badge-light {
-  background: var(--bg-soft);
-  border: 1px solid var(--gold-alpha-20);
-  color: var(--dark);
+  background: var(--bg-white);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  color: var(--navy);
 }
 
 /* ---Semantic image utilities--- */
@@ -1100,10 +1087,12 @@ body.dark-mode .nav-check:checked ~ .nav-menu {
 
 .img-frame {
   background: var(--bg-white);
-  border: 1px solid var(--border-gray);
+  border: 1px solid var(--muted);
   border-radius: 0.75rem;
   padding: 0.5rem;
   display: inline-block;
+  height: 280px;
+  object-fit: contain;
 }
 
 /* ---Semantic flex utilities--- */
@@ -1162,7 +1151,7 @@ body.dark-mode .nav-check:checked ~ .nav-menu {
 }
 
 .reviewer-name {
-  color: var(--teal);
+  color: var(--teal-dark);
   font-weight: 700;
 }
 
@@ -1173,11 +1162,11 @@ body.dark-mode .heading-lg,
 body.dark-mode .heading-md,
 body.dark-mode .heading-sm,
 body.dark-mode .heading-xs {
-  color: var(--teal);
+  color: var(--teal-dark);
 }
 
 body.dark-mode .body-lead {
-  color: var(--teal);
+  color: var(--teal-dark);
 }
 
 body.dark-mode .body-lg,
@@ -1185,7 +1174,7 @@ body.dark-mode .body-md,
 body.dark-mode .text-muted-body,
 body.dark-mode .body-muted-lg,
 body.dark-mode .body-muted-sm {
-  color: var(--text-light) !important;
+  color: var(--muted) !important;
 }
 
 body.dark-mode .text-accent {
@@ -1197,9 +1186,9 @@ body.dark-mode .text-accent-sm {
 }
 
 body.dark-mode .badge-light {
-  background: var(--teal-alpha-10);
-  border-color: var(--teal-alpha-30);
-  color: var(--teal);
+  background: rgba(79, 217, 196, 0.1);
+  border-color: rgba(79, 217, 196, 0.3);
+  color: var(--teal-dark);
 }
 
 body.dark-mode .body-lead-gold {
@@ -1207,21 +1196,21 @@ body.dark-mode .body-lead-gold {
 }
 
 body.dark-mode .divider {
-  border-top-color: var(--teal-alpha-30);
+  border-top-color: rgba(79, 217, 196, 0.3);
 }
 
 body.dark-mode .faq-item {
-  border-color: var(--teal-alpha-20);
+  border-color: rgba(79, 217, 196, 0.2);
 }
 
 body.dark-mode .faq-answer {
-  color: var(--text-light);
+  color: var(--muted);
 }
 
 body.dark-mode .testimonial-quote {
-  color: var(--text-light);
+  color: var(--muted);
 }
 
 body.dark-mode .reviewer-name {
-  color: var(--teal);
+  color: var(--teal-dark);
 }

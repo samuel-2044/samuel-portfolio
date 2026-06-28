@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-
 document.addEventListener('DOMContentLoaded', function () {
   const btn = document.getElementById('scrollTopBtn');
   if (!btn) return;

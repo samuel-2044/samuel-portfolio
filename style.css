@@ -1077,6 +1077,17 @@ body.dark-mode .nav-check:checked ~ .nav-menu {
   margin-bottom: 0.5rem;
 }
 
+.testimonial-quote {
+  color: #0c0e11;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.reviewer-name {
+  color: #64ffda;
+  font-weight: 700;
+}
+
 /* ---Dark mode overrides for semantic classes--- */
 body.dark-mode .heading-xl,
 body.dark-mode .heading-2xl,
@@ -1119,4 +1130,12 @@ body.dark-mode .body-lead-gold {
 
 body.dark-mode .divider {
   border-top-color: rgba(100, 255, 218, 0.3);
+}
+
+body.dark-mode .testimonial-quote {
+  color: #e2e8f0;
+}
+
+body.dark-mode .reviewer-name {
+  color: #64ffda;
 }
